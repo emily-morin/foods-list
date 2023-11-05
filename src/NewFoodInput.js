@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 const NewFoodInput = () => {
+  const [food, setFood] = useState("");
+
   return (
     <form className="food-form">
       <input type="text" />
