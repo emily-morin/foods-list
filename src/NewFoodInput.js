@@ -9,8 +9,10 @@ const NewFoodInput = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    props.addFoodItem(food);
-    setFood("");
+    if (food !== "") {
+      props.addFoodItem(food);
+      setFood("");
+    }
   }
 
   return (
