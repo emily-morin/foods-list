@@ -23,6 +23,12 @@ body {
   width: 50%;
 }
 
+.food-form label {
+  margin: 1rem;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
 .food-form button {
   border: 1px solid #ccc;
   padding: 10px;
@@ -51,6 +57,11 @@ body {
 
 .food-list li:last-of-type {
   border-bottom: none;
+}
+
+.food-list li.strike {
+  text-decoration: line-through;
+  background-color: rgb(245, 241, 241);
 }
 
 span.delete {
