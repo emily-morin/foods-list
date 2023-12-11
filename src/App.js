@@ -23,8 +23,8 @@ export default function App() {
       <h1>New Foods to Try</h1>
       <NewFoodInput addFoodItem={addFoodItem} />
       <ul className="food-list">
-        {foodsToTry.map((f, index) => {
-          return <Food key={index} food={f} deleteFood={deleteFood} />
+        {foodsToTry.map((f) => {
+          return <Food key={f} food={f} deleteFood={deleteFood} />
         })}
       </ul>
     </div>
